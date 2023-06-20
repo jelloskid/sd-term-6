@@ -7,15 +7,17 @@
     <title>Document</title>
 </head>
 <style>
-form{background-color: grey;}
-form{text-align: center;}
-form{margin: auto;
-     padding: auto;
-    }
+form{background-color: grey;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
 h1{background-color: darkblue;}
-p1{background-color: green;}
+
+p1{color: darkred;}
+
 table, th, td {
-  border: 1px solid;
+  border: 1px  dotted;
   text-align: center;
   table-layout: center;
   color:black;
@@ -24,12 +26,12 @@ table, th, td {
 
 body{background-image: url(https://media.istockphoto.com/id/155428355/photo/three-dogs-on-winners-podium.jpg?s=612x612&w=0&k=20&c=guITZYmhwBnjLBFcCUC2Sqih-tnVa6usMZaglziMomg=);
 background-repeat:no-repeat;
-background-position: center;
+background-position: right;
 background-color: lightskyblue;}
 
 </style>
 <body>
-    <form action="/action_page.php">
+    <form action="add to list">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" ><br>
         <label for="lname">Last name:</label><br>
@@ -132,6 +134,9 @@ background-color: lightskyblue;}
 </p1><br>
 <p2>To see how what the dogs will be doing pls follow the link provided.</p2><a href="https://www.youtube.com/watch?v=eNj1yHp0WvA"></a>
 <p><a href="https://www.youtube.com/watch?v=4dPAqEoKOa0">See the tricks</a></p>
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
 
 </body>
 </html>
